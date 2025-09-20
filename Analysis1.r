@@ -1,4 +1,4 @@
-setwd("/Users/abdulazeez/Documents/Project/Mangrove_ICSSR/Analysis")
+setwd("/...../Analysis")
 
 # === 0. Install / load packages ===
 required <- c("readxl","tidyverse","janitor","here","skimr","lubridate",
@@ -8,9 +8,10 @@ required <- c("readxl","tidyverse","janitor","here","skimr","lubridate",
 to_install <- setdiff(required, installed.packages()[,1])
 if(length(to_install)) install.packages(to_install)
 invisible(lapply(required, library, character.only = TRUE))
-
+-------------------------------------------------------------------
 # === 1. Read data and initial inspection ===
-#file <- "data_survey.xlsx"   # path to your uploaded file
+-------------------------------------------------------------------
+file <- "data_survey.xlsx"   # path to your uploaded file
 sheets <- readxl::excel_sheets(file)
 
 # default to first sheet
@@ -21,8 +22,8 @@ df_raw <- readxl::read_excel(file, sheet = sheets[1], guess_max = 10000)
 df <- df_raw %>% janitor::clean_names()
 #df <- df[-546, ]
 #df <- df[-905, ]
-#f <- df[-1452, ]
-#df <- f
+#df <- df[-1452, ]
+
 
 ##correct the monthly income responses
 #df <- df %>%
@@ -762,17 +763,5 @@ if(exists("fit_glm")){
 # Save sample plots
 ggsave("demographic_barplot.png", width=8, height=5)
 
-# === 13. Quick checklist of next actions for reporting (automatable) ===
-# 1. Manually inspect column_names_preview.csv to ensure column mapping is correct.
-# 2. If Likert items are not auto-detected, set awareness_cols <- c("col1","col2",...)
-# 3. For qualitative themes, update the dictionary with local keywords in Dhivehi/Malayalam if needed.
-# 4. Tune LDA topics k by inspecting terms(lda, 10) and coherence.
-
-cat("Analysis complete. Key artifacts written to working dir:\n",
-    "- column_names_preview.csv\n",
-    "- survey_analysis_outputs.xlsx\n",
-    "- glm_results.csv (if regression ran)\n",
-    "- likert_awareness.png (if Likert plotted)\n",
-    "Adjust keyword lists or explicit column lists where auto-detection picks up wrong columns.\n")
-
+#################### THE END ###############################
 
