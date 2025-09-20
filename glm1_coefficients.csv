@@ -1,0 +1,26 @@
+term,estimate,std.error,statistic,p.value
+(Intercept),14.9086,1455.3976,0.0102,0.9918
+educationHigher secondary,0.1289,0.1929,0.6684,0.5039
+educationNo formal education,1.9613,0.7955,2.4656,0.0137
+educationOthers,-0.1953,0.7245,-0.2695,0.7875
+educationPost graduate,0.6713,0.5259,1.2765,0.2018
+educationPrimary,0.2182,0.4049,0.5389,0.5899
+educationSecondary,0.1232,0.2533,0.4863,0.6268
+age_group31-45,-0.082,0.1596,-0.5138,0.6074
+age_group46-60,0.5782,0.2323,2.4887,0.0128
+age_groupAbove 60,-0.8966,0.4265,-2.1022,0.0355
+age_groupBelow 18,0.2084,0.3913,0.5324,0.5944
+occupationBusiness,-15.1088,1455.3976,-0.0104,0.9917
+occupationFishing,-13.6362,1455.3976,-0.0094,0.9925
+occupationGovernment Service,-14.0354,1455.3976,-0.0096,0.9923
+occupationHomemaker,-14.2491,1455.3976,-0.0098,0.9922
+occupationOthers,-16.1376,1455.3976,-0.0111,0.9912
+occupationPrivate sector,-12.9988,1455.3976,-0.0089,0.9929
+occupationSelf-employed,-14.3113,1455.3976,-0.0098,0.9922
+occupationTourism,-1.1734,1538.3596,-8e-4,0.9994
+occupationUnemployed,-13.2484,1455.3976,-0.0091,0.9927
+"income_num₹20,000 - ₹30,000",2.5817,0.3701,6.9752,0
+"income_num₹30,000 - ₹40,000",2.2058,0.3495,6.3121,0
+"income_num₹40,000 - ₹50,000",0.5285,0.3308,1.5977,0.1101
+"income_numAbove ₹50,000",1.2292,0.2162,5.6848,0
+"income_numBelow ₹10,000",-1.1447,0.2145,-5.3378,0
